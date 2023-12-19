@@ -8,6 +8,8 @@
 import UIKit
 
 class DishPotraitCollectionViewCell: UICollectionViewCell {
+    
+    static let identifier = "DishPotraitCollectionViewCell"
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dishImage: UIImageView!
@@ -16,6 +18,9 @@ class DishPotraitCollectionViewCell: UICollectionViewCell {
     
     
     func setup(dish: Dish) {
-        
+        titleLabel.text = dish.title
+        dishImage.image = dish.image
+        caloriesLabel.text = dish.formattedCalories
+        descriptionLabel.text = dish.description
     }
 }

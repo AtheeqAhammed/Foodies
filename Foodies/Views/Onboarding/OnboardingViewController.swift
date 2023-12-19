@@ -37,9 +37,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            self.navigationController?.pushViewController(homeVC, animated: true)
+            print("Go to HomeScreen")
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
