@@ -17,6 +17,6 @@ struct Dish {
     
     
     var formattedCalories: String {
-        return String(format: "%.2f", calories ?? 0)
+        return String(format: "%.2f calories", calories ?? 0)
     }
 }

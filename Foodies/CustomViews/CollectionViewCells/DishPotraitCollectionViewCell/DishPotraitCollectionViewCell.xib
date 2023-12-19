@@ -17,20 +17,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N3-5A-1yW">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N3-5A-1yW" customClass="CardView" customModule="Foodies" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CcL-PY-w1P">
                                 <rect key="frame" x="8" y="8" width="164" height="284"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-iH-0A9">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="21.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="gZk-HG-BjE"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uQc-D9-YcZ">
-                                        <rect key="frame" x="0.0" y="21.666666666666657" width="164" height="231"/>
+                                        <rect key="frame" x="0.0" y="19.999999999999986" width="164" height="232.66666666666663"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xb-lI-pE3">
                                         <rect key="frame" x="0.0" y="252.66666666666671" width="164" height="14.333333333333343"/>
@@ -67,6 +75,11 @@
                 <constraint firstItem="1N3-5A-1yW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mlA-7C-bao"/>
             </constraints>
             <size key="customSize" width="167" height="204"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="caloriesLabel" destination="5xb-lI-pE3" id="xaG-mv-v77"/>
                 <outlet property="descriptionLabel" destination="YkQ-58-WYu" id="XVg-Ih-Ihu"/>

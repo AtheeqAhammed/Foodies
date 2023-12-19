@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         .init(id: "id5", title: "Dessert's", image: UIImage(named: "cake")!),
         .init(id: "id6", title: "Pizza's", image: UIImage(named: "pizza")!)]
     
-    var populars: [Dish] = [.init(id: "id1", title: "Grilled", image: UIImage(named: "barbeque")!, calories: 64.54, description: "Chicken Grilled"),
+    var populars: [Dish] = [.init(id: "id1", title: "Grilled", image: UIImage(named: "barbeque")!, calories: 64.54, description: "Chicken Grilled kebabs barbeque Rosted Grills Delicious Food"),
         .init(id: "id2", title: "Sea Food", image: UIImage(named: "fishFry")!, calories: 55.42, description: "fish fries"),
         .init(id: "id3", title: "Cakes", image: UIImage(named: "cake")!, calories: 23.44, description: "cakes")]
     
